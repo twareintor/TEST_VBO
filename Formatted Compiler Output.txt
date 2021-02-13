@@ -1,0 +1,14 @@
+D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	In function 'int TestShaders()':
+27	66	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glBufferData' was not declared in this scope
+28	68	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glVertexAttribPointer' was not declared in this scope
+29	43	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glEnableVertexAttribArray' was not declared in this scope
+34	53	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'filetobuf' was not declared in this scope
+36	48	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glCreateShader' was not declared in this scope
+38	66	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glShaderSource' was not declared in this scope
+42	30	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glCompileShader' was not declared in this scope
+47	34	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glCreateProgram' was not declared in this scope
+48	44	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glAttachShader' was not declared in this scope
+50	68	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glBindAttribLocation' was not declared in this scope
+51	29	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glLinkProgram' was not declared in this scope
+54	28	D:\tmz\TESTVBO\TESTVBO.000.A00\testvbo.cpp	[Error] 'glUseProgram' was not declared in this scope
+31		D:\tmz\TESTVBO\TESTVBO.000.A00\Makefile.win	recipe for target 'testvbo.o' failed

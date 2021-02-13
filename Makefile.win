@@ -1,0 +1,31 @@
+# Project: testvbo
+# Makefile created by Dev-C++ 5.9.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o testvbo.o
+LINKOBJ  = main.o testvbo.o
+LIBS     = -L"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib" -L"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -mwindows -lopengl32
+INCS     = -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/KIT.PORT/OrwellDev-CppPortable_5.9.2/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = testvbo.exe
+CXXFLAGS = $(CXXINCS) -std=c++11
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+testvbo.o: testvbo.cpp
+	$(CPP) -c testvbo.cpp -o testvbo.o $(CXXFLAGS)
